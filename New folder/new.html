@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <table id="tblDetail" class="table table-bordered table-hover table-ligth table-sm table-striped">
+
+        <thead>
+        
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 2</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              a
+            </td>
+            <td>
+              b
+            </td>
+            <td>
+              c
+            </td>
+            <td>
+              d
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              4
+            </td>
+            <tr>
+            <td>
+              e
+            </td>
+            <td>
+              f
+            </td>
+            <td>
+              g
+            </td>
+            <td>
+              h
+            </td>
+           
+          </tr>
+          </tr>
+        </tbody>
+    </table>
+
+    
+    <button type="button" onclick="restartTable()">restart table</button>
+<script > 
+function restartTable(){
+
+const tbody = document.getElementById("tblDetail").getElementsByTagName('tbody')[0];
+    tbody.innerHTML = "";
+
+}
+</script>
+    
+</body>
+</html>
